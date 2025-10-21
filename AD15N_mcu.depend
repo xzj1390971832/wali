@@ -1,0 +1,257 @@
+# depslib dependency file v1.0
+1695883718 source:f:\jl\fw-ad15n-main\sdk\app\bsp\common\rtc\rtc.c
+	"cpu.h"
+	"asm/power/p33.h"
+	"asm/power/virtual_rtc.h"
+	"log.h"
+	"vm_api.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\cpu.h
+	"sfr.h"
+	"irq.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\sfr.h
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\irq.h
+	"hwi.h"
+	"typedef.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\hwi.h
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\typedef.h
+	"asm_type.h"
+	"cpu.h"
+	"sfr.h"
+	"string.h"
+	"cpu.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\asm_type.h
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\asm\power\p33.h
+	"typedef.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\asm\power\virtual_rtc.h
+	"typedef.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\common\log.h
+	"cpu.h"
+	"typedef.h"
+	"uart.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\uart.h
+	"typedef.h"
+	"wdt.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\common\wdt.h
+
+1695883718 f:\jl\fw-ad15n-main\sdk\app\bsp\common\vm\vm_api.h
+	"typedef.h"
+	"ioctl.h"
+	"dev_mg/device.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\dev_mg\ioctl.h
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\dev_mg\device.h
+	"typedef.h"
+	"atomic.h"
+	"ioctl_cmds.h"
+	"dev_manage.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\dev_mg\atomic.h
+	"cpu.h"
+	"irq.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\dev_mg\ioctl_cmds.h
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\dev_mg\dev_manage.h
+
+1695883718 source:f:\jl\fw-ad15n-main\sdk\app\bsp\common\vm\vm_api.c
+	"vm_api.h"
+	"config.h"
+	"app_config.h"
+	"log.h"
+	"new_vm.h"
+	"old_vm.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\common\config.h
+	"includes.h"
+	"common.h"
+	"errno-base.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\common\includes.h
+	"typedef.h"
+	"sfr.h"
+	"csfr.h"
+	"hwi.h"
+	"cpu.h"
+	"wdt.h"
+	"uart.h"
+	"jiffies.h"
+	"printf.h"
+	"string.h"
+	"gpio.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\csfr.h
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\common\jiffies.h
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\common\printf.h
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\gpio.h
+	"typedef.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\common\common.h
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\common\errno-base.h
+
+1695883718 f:\jl\fw-ad15n-main\sdk\app\src\mcu\app_config.h
+	"app_modules.h"
+	"usb_std_class_def.h"
+	"usb_common_def.h"
+	"usb_std_class_def.h"
+	"usb_common_def.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\app\src\mcu\sh55\app_modules.h
+
+1695883718 f:\jl\fw-ad15n-main\sdk\app\bsp\common\usb\usb_std_class_def.h
+
+1695883718 f:\jl\fw-ad15n-main\sdk\app\bsp\common\usb\usb_common_def.h
+	"app_config.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\common\new_vm.h
+	"typedef.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\common\old_vm.h
+	"typedef.h"
+	"ioctl.h"
+	"dev_mg/device.h"
+
+1695883718 source:f:\jl\fw-ad15n-main\sdk\app\bsp\cpu\sh55\clock.c
+	"config.h"
+	"hwi.h"
+	"clock.h"
+	"math.h"
+	"common.h"
+	"log.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\clock.h
+
+1695883718 source:f:\jl\fw-ad15n-main\sdk\app\bsp\cpu\sh55\port_init.c
+	"asm/power_interface.h"
+	"asm/power/p33.h"
+	<stdlib.h>
+	"app_config.h"
+	"typedef.h"
+	"gpio.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\asm\power_interface.h
+	"typedef.h"
+	"power/p33.h"
+
+1695883718 source:f:\jl\fw-ad15n-main\sdk\app\bsp\cpu\sh55\power_api.c
+	"power_api.h"
+	"asm/power_interface.h"
+	"asm/power/p33.h"
+	"gpio.h"
+	"tick_timer_driver.h"
+	"wdt.h"
+	"app_config.h"
+	"maskrom.h"
+	"dac_cpu.h"
+	"vm_api.h"
+	"log.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\app\bsp\cpu\sh55\power_api.h
+	"typedef.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\tick_timer_driver.h
+	"config.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\maskrom.h
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\dac_cpu.h
+
+1695883718 source:f:\jl\fw-ad15n-main\sdk\app\bsp\cpu\sh55\uart.c
+	"config.h"
+	"clock.h"
+	"uart.h"
+	"app_config.h"
+	"gpio.h"
+
+1695883718 source:f:\jl\fw-ad15n-main\sdk\app\bsp\lib\common.c
+	"config.h"
+	"common.h"
+	"circular_buf.h"
+	"clock.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\common\circular_buf.h
+	"typedef.h"
+
+1695883718 source:f:\jl\fw-ad15n-main\sdk\app\src\mcu\app_config.c
+	"includes.h"
+	"app_modules.h"
+
+1718183336 source:f:\jl\fw-ad15n-main\sdk\app\src\mcu\mcu_app.c
+	"cpu.h"
+	"config.h"
+	"typedef.h"
+	"errno-base.h"
+	"app_config.h"
+	"uart_dev.h"
+	"log.h"
+	"mcu_app.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\app\src\mcu\mcu_app.h
+
+1695883718 source:f:\jl\fw-ad15n-main\sdk\app\src\mcu\sh55\init.c
+	"config.h"
+	"common.h"
+	"boot.h"
+	"msg.h"
+	"init.h"
+	"clock.h"
+	"efuse.h"
+	"efuse_trim_value.h"
+	"log.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\common\boot.h
+	"asm_type.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\msg\msg.h
+	"typedef.h"
+	"uart.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\app\bsp\start\sh54_sh55\init.h
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\efuse.h
+	"boot.h"
+
+1695883718 f:\jl\fw-ad15n-main\sdk\include_lib\cpu\sh55\efuse_trim_value.h
+	"boot.h"
+
+1695883718 source:f:\jl\fw-ad15n-main\sdk\app\src\mcu\sh55\main.c
+	"config.h"
+	"common.h"
+	"maskrom.h"
+	"asm/power/p33.h"
+	"app_config.h"
+	"init.h"
+	"asm/power_interface.h"
+	"power_api.h"
+	"log.h"
+
+1716871106 source:f:\jl\fw-ad15n-main\sdk\app\bsp\cpu\sh55\uart_dev.c
+	"cpu.h"
+	"config.h"
+	"clock.h"
+	"uart_dev.h"
+	"log.h"
+
+1716968155 f:\jl\fw-ad15n-main\sdk\app\bsp\cpu\sh55\uart_dev.h
+	"jiffies.h"
+	"irq.h"
+	"typedef.h"
+	"wdt.h"
+	"includes.h"
+	"gpio.h"
+

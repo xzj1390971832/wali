@@ -1,0 +1,98 @@
+/*********************************************************************************************
+    *   Filename        : main.c
+
+    *   Description     :
+
+    *   Author          :
+
+    *   Email           :
+
+    *   Last modifiled  :
+
+    *   Copyright:(c)JIELI  2011-2017  @ , All Rights Reserved.
+*********************************************************************************************/
+#include "config.h"
+#include "common.h"
+#include "maskrom.h"
+#include "asm/power/p33.h"
+#include "app_config.h"
+#include "init.h"
+#include "vm_api.h"
+#include "asm/power_interface.h"
+#include "power_api.h"
+#include "timer_drv.h"
+#include "uart_dev.h"
+#include "uart_my.h"
+
+#define LOG_TAG_CONST       MAIN
+#define LOG_TAG             "[main]"
+#include "log.h"
+
+extern void app(void);
+extern void app_play_path1(void);
+extern void app_play_path2(void);
+int c_main(int cfg_addr)
+{
+    VDC13_LOAD_EN(1);
+
+#if 1
+    ///暂时调低p33跑的波特率
+    JL_P33->SPI_CON |= (BIT(2) | BIT(3));
+#endif
+
+    /* spi_cache_way_switch(1); */
+    /* request_irq(1, 7, exception_irq_handler, 0); */
+    mask_init(exception_analyze, putchar);
+    all_init_isr();
+
+    log_init(1000000);
+
+    log_info("---------sh5x apps------------ \n");
+
+    p33_tx_1byte(P3_PINR_CON, 0);
+
+    reset_source_dump();
+    power_reset_source_dump();
+
+    //LVD电压配置，默认关闭
+    /* p33_vlvd(LVLD_SEL_25V,0);//0:reset , 1:interrupt(wkup)*/
+
+    //注:soft_off会Latch io, 唤醒之后电源初始化才会释放io，所以在电源初始化之后才能翻io/打印
+    sys_power_init();
+
+    //--- OSC CL  12M
+    SFR(JL_CLK->CON0, 19, 2, 3);
+
+    system_init();
+
+
+    //gpio_set_direction(IO_PORTA_01,1);        //PA1口打开上拉
+    //gpio_set_die(IO_PORTA_01,1);            //PA1口使能数字输入
+    //gpio_set_pull_up(IO_PORTA_01,1);        //PA1口打开上拉
+    //gpio_set_pull_down(IO_PORTA_01,0);
+
+
+
+    //test1();
+
+
+    timer_init(1,250);
+    // timer_init(1,500);
+    // timer_init(2,500);
+    //uart01_test();
+
+
+    app();
+
+
+
+
+    while (1) {
+        wdt_clear();
+
+
+        //按钮控制
+    }
+}
+
+
